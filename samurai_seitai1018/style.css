@@ -1,0 +1,313 @@
+/*
+Theme Name: SAMURAI UNIVERSITY
+Theme URI: https://www.sejuku.net/
+Description: SAMURAI ENGINEERのWordPress教材
+Version: 1.0.0
+Author: SAMURAI ENGINEER
+Author URI: https://www.sejuku.net/
+*/
+
+@charset "UTF-8";
+
+html{
+  font-size: 100%;
+}
+
+body{
+  font-family: "Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴPro W3",sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+
+/* ヘッダーのデザイン */
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 300%;
+  top: 20px;
+}
+
+.logo{
+  width: 500px;
+  margin-top: 30
+  px;
+}
+
+.main-nav{
+  display: flex;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+
+.main-nav li{
+  margin-left: 36px;
+}
+
+.main-nav a{
+  color: #432;
+}
+
+.main-nav a:hover{
+  color:grey
+}
+
+.page-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper{
+  max-width: 1200px;
+  margin: 0auto;
+  padding: 0 4%;
+}
+
+.SAMURAI-TOP{
+  background-size: cover;
+  background-position: center top;
+}
+
+#home{
+  background-image: url(images/naisou1.jpg);
+  min-height: 100vh;
+}
+
+p{
+text-align: center;
+}
+
+/* 余白の調整 */
+.midashi2{
+  padding-top: 1.3rem;
+}
+
+.setumei1{
+  padding-top: 1.3rem;
+}
+
+.setumei2{
+  padding-top: 1.3rem;
+}
+
+/* 見出しデザイン */
+
+h3 {
+  position: relative;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+h3:before {
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 5px;
+  content: '';
+  border-radius: 3px;
+  background: #000;
+}
+
+/* 営業時間の表 */
+
+table{
+  width: 70%;
+  margin: auto;
+  border-spacing: 0;
+}
+
+table th{
+  border-bottom: solid 2px #432;
+  padding: 10px 0;
+}
+
+table td{
+  border-bottom: solid 2px #ddd;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* お知らせ */
+.news-list{
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
+}
+.news-list .item a{
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #CCC;
+  padding: 20px 20px;
+}
+.news-list .item:first-child a{
+  border-top: 1px solid #CCC;
+}
+.news-list .item .date{
+  margin: 0;
+  min-width: 120px;
+  font-size: 16px;
+  color: #999;
+  padding: 0 20px 0 0;
+}
+.news-list .item .title{
+  margin: 0;
+  width: 100%;
+}
+.news-list .item a:hover .title{
+  color: #00F;
+}
+
+@media screen and (max-width: 767px){
+.news-list .item a{
+  flex-wrap: wrap;
+}
+.news-list .item .date{
+  min-width: 100px;
+}
+.news-list .item .title{
+  margin-top: 10px;
+}
+}
+
+/* 装飾 */
+
+.news-list{
+  width: 70%;
+  margin: auto;
+  border-spacing: 0;
+}
+
+a{
+  text-decoration: none;
+}
+body{
+  margin: 20px;
+}
+/* お知らせここまで */
+
+/* メニューここから */
+#menus {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  width: 300px;
+  height: 315px;
+  border: 1px solid lightgray;
+}
+
+.menu:nth-child(2) {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.picture img {
+  width: 100%;
+  height: 200px;
+}
+
+.description {
+  width: 100%;
+  height: 145px;
+  padding-right: 12px;
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+
+.description p {
+  font-size: 13px;
+  color: dimgray;
+}
+/* メニューここまで */
+
+/* フッターここから */
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #4b5564;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+address {
+  font-style: normal;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  padding: 2rem;
+  font-size: 15px;
+  color: #4b5564;
+  background: #fff;
+}
+
+.footer_logo {
+  width: 500px;
+  margin-top: 30px;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.footer__navi li {
+  margin-bottom: 0.75rem;
+}
+
+.footer__address {
+  margin-bottom: 2rem;
+}
+
+.footer__address a {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .md-flex {
+    display: flex;
+  }
+
+  .md-justify-between {
+    justify-content: space-between;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .footer__address a {
+    text-decoration: none;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg-flex {
+    display: flex;
+  }
+}

@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/* ヘッダーのデザイン */
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 300%;
+  top: 20px;
+}
+
+.logo{
+  width: 500px;
+  margin-top: 30
+  px;
+}
+
+.main-nav{
+  display: flex;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+
+.main-nav li{
+  margin-left: 36px;
+}
+
+.main-nav a{
+  color: #432;
+}
+
+.main-nav a:hover{
+  color:grey
+}
+
+.page-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper{
+  max-width: 1200px;
+  margin: 0auto;
+  padding: 0 4%;
+}
+/* ヘッダーのデザインここまで */
+
+body{
+  font-family: "Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴPro W3",sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+
+/* container */
+.wrapper{
+  width:100%;
+}
+.wrapper .container{
+  max-width:1000px;
+  margin:0px auto;
+  padding:80px 0px;
+}
+/* content */
+.wrapper .content .heading{
+  margin:0px 0px 40px 0px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .wrapper .content .list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+}
+.wrapper .content .list-item {
+  margin:50px 0px;
+  padding:0px 50px;
+  text-align:center;
+}
+@media (min-width: 992px) {
+  .wrapper .content .list-item {
+      margin:0px;
+      width:calc(100% / 3);
+  }
+}
+.wrapper .content .list-item .image{
+  display:block;
+  width:100%;
+  max-width:300px;
+  margin:0px auto 20px auto;
+  border-radius:100%;
+}
+.wrapper .content .list-item .text{
+  line-height:1.8rem;
+  font-size:0.8rem;
+  color:#666666;
+}
+
+/* フッターここから */
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #4b5564;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+address {
+  font-style: normal;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  padding: 2rem;
+  font-size: 15px;
+  color: #4b5564;
+  background: #fff;
+}
+
+.footer_logo {
+  width: 500px;
+  margin-top: 30px;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.footer__navi li {
+  margin-bottom: 0.75rem;
+}
+
+.footer__address {
+  margin-bottom: 2rem;
+}
+
+.footer__address a {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .md-flex {
+    display: flex;
+  }
+
+  .md-justify-between {
+    justify-content: space-between;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .footer__address a {
+    text-decoration: none;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg-flex {
+    display: flex;
+  }
+}
